@@ -7,6 +7,7 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 require 'test_helper'
+
 class StoreControllerTest < ActionController::TestCase
   test "should get index" do
     get :index
@@ -16,4 +17,5 @@ class StoreControllerTest < ActionController::TestCase
     assert_select 'h3', 'Programming Ruby 1.9'
     assert_select '.price', /\$[,\d]+\.\d\d/
   end
+
 end

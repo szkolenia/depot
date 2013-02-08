@@ -6,16 +6,10 @@
 # We make no guarantees that this code is fit for any purpose. 
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
-class ApplicationController < ActionController::Base
-  protect_from_forgery
+require 'test_helper'
 
-  private
-
-    def current_cart 
-      Cart.find(session[:cart_id])
-    rescue ActiveRecord::RecordNotFound
-      cart = Cart.create
-      session[:cart_id] = cart.id
-      cart
-    end
+class LineItemTest < ActiveSupport::TestCase
+  # test "the truth" do
+  #   assert true
+  # end
 end

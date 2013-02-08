@@ -6,16 +6,11 @@
 # We make no guarantees that this code is fit for any purpose. 
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
-class ApplicationController < ActionController::Base
-  protect_from_forgery
+class CreateCarts < ActiveRecord::Migration
+  def change
+    create_table :carts do |t|
 
-  private
-
-    def current_cart 
-      Cart.find(session[:cart_id])
-    rescue ActiveRecord::RecordNotFound
-      cart = Cart.create
-      session[:cart_id] = cart.id
-      cart
+      t.timestamps
     end
+  end
 end

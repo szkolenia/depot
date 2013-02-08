@@ -13,7 +13,7 @@
  *= require_self
  *= require_tree .
  */
- 
+
 /* START_HIGHLIGHT */
 #banner {
   background: #9c9;
@@ -54,8 +54,10 @@
 
     ul {
       padding: 0;
+
       li {
         list-style: none;
+
         a {
           color: #bfb;
           font-size: small;
