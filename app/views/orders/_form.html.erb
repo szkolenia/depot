@@ -3,6 +3,7 @@
     <div id="error_explanation">
       <h2><%= pluralize(@order.errors.count, "error") %>
       prohibited this order from being saved:</h2>
+
       <ul>
       <% @order.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
@@ -10,6 +11,7 @@
       </ul>
     </div>
   <% end %>
+
   <div class="field">
     <%= f.label :name %><br />
 <!-- START_HIGHLIGHT -->
