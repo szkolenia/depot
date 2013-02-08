@@ -6,10 +6,8 @@
 # We make no guarantees that this code is fit for any purpose. 
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
-class StoreController < ApplicationController
-  skip_before_filter :authorize
-  def index
-    @products = Product.order(:title)
-    @cart = current_cart
-  end
+class User < ActiveRecord::Base
+  attr_accessible :name, :password, :password_confirmation
+  validates :name, presence: true, uniqueness: true
+  has_secure_password
 end
