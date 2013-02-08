@@ -3,7 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /* START_HIGHLIGHT */
-.carts {
+.carts, #side #cart {
+/* END_HIGHLIGHT */
   .item_price, .total_line {
     text-align: right;
   }
@@ -13,4 +14,3 @@
     border-top: 1px solid #595;
   }
 }
-/* END_HIGHLIGHT */

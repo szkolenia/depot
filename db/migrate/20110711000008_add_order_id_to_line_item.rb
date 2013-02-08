@@ -6,9 +6,8 @@
 # We make no guarantees that this code is fit for any purpose. 
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
-class StoreController < ApplicationController
-  def index
-    @products = Product.order(:title)
-    @cart = current_cart
+class AddOrderIdToLineItem < ActiveRecord::Migration
+  def change
+    add_column :line_items, :order_id, :integer
   end
 end

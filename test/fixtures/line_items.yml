@@ -1,13 +1,12 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+# Read about fixtures at
+# http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-#START_HIGHLIGHT
   product: ruby
-  cart: one
+#START_HIGHLIGHT
+  order: one
 #END_HIGHLIGHT
 
 two:
-#START_HIGHLIGHT
   product: ruby
   cart: one
-#END_HIGHLIGHT
